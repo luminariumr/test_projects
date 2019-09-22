@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .success,
+      .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+      }
+      .success {
+        background: rgb(0, 83, 0);
+      }
+      .error {
+        background: rgb(82, 0, 0);
+      }
+    </style>
+    <title>Group Project</title>
+  </head>
+  <body class="grey darken-2">
+    <div class="container ">
+      <h2 class="center ">Insert Our Project Title</h2>
+      <div class="row">
+        <div id="main" class="card indigo accent-4">
+          <div class="card-content">
+            <div class="row">
+              <form id="task-form" class="center">
+                <input
+                  type="text"
+                  class=" center"
+                  style="width:50%"
+                  name="username"
+                  id="username"
+                  placeholder="Username"
+                />
+                <input
+                  type="password"
+                  class=" center"
+                  style="width:50%"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                /><br /><br />
+                <button class="btn " id="logBtn">Login</button>
+
+                <button class="btn" id="regBtn">Register</button>
+                <div id="alerts"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

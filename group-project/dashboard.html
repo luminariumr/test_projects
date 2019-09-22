@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+        .success,
+        .error {
+          color: white;
+          padding: 5px;
+          margin: 5px 0 15px 0;
+        }
+        .success {
+          background: rgb(0, 83, 0);
+        }
+        .error {
+          background: rgb(82, 0, 0);
+        }
+      </style>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav class="grey darken-4">
+      <a href="#" class="brand-logo left"><span style='font-style: oblique'>Async</span></a>
+
+      <a
+        href="login.html"
+        class="right "
+        style="color:black"
+        >Logout</a
+      >
+      <span class="right" id="uName">Welcome</span>
+    </nav>
+    <div id="main">
+      <div class="row">
+        <div class="col s2 grey lighten-2 ">
+          <a href="dashboard.html">User</a>
+          <hr>
+          <a href="product.html">Products</a>
+        </div>
+        <div class="col s10 grey darken-1">
+                <table class="centered">
+                        <thead>
+                          <tr>
+                              <th>ID</th>
+                              <th>Username</th>
+                              <th>Password</th>
+                              <th>Action</th>
+                          </tr>
+                        </thead>
+                
+                        <tbody id='user-list'>
+                        </tbody>
+                      </table>
+                      <br>
+                      <center><a href="#terms" class="btn modal-trigger">Add User</a></center>
+                      <div class="modal" id="terms">
+                        <div class="modal-content">
+                          <h4>Add User</h4>
+                            <input type="text" id='username' placeholder="username">
+                            <input type="password" id='password' placeholder="Password">
+
+                            <div class="model-footer right">
+                                <a href="#" class="modal-close btn" id='addUser'>Add User</a>
+                              <a href="#" class="modal-close btn ">Close</a>
+                              <br><br>
+
+                            </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div id="alerts"></div>
+          </div>
+                    
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="dash.js"></script>
+  </body>
+</html>
