@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- <link href="login.css" rel='stylesheet';> -->
+    <title>Login Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div id="main" class="card">
+            <div class="card-content">
+              <span class="card-title">Login</span>
+              <div class="row">
+                <form id="task-form">
+                  <div class="input-field col 12">
+                    <input type="text" name="" id="uName" required />
+                    <label for="">Username</label>
+                  </div>
+                  <div class="input-field col 12">
+                    <input type="text" name="" id="pWord" required />
+                    <label for="">Password</label>
+                  </div>
+
+                  <input
+                    type="submit"
+                    value="Register"
+                    id="register"
+                    class="btn"
+                  />
+                </form>
+                <button class="btn" id="login">Login</button>
+                <button class="btn" id="clear">Clear</button>
+                <h1 id="h1">Welcome</h1>
+                <div class="card-action">
+                  <h5 id="">Rock Paper Scissors</h5>
+                  <button class="btn" id="rock">Rock</button>
+                  <button class="btn" id="paper">Paper</button>
+                  <button class="btn" id="scissor">Scissor</button>
+
+                  <h4 id="myHandText"></h4>
+                  <h4 id="opponentHandText"></h4>
+                  <h3 id="timer"></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="login.js"></script>
+    <script src="rps.js"></script>
+  </body>
+</html>
